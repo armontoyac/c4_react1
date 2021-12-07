@@ -111,7 +111,7 @@ function App() {
           </Container>
           {/* <ProyectText /> */}
           <UsuarioAdministrador/>
-          <CrudActividades/>
+          {/*<CrudActividades/> */}
           <Footer />
         
      
