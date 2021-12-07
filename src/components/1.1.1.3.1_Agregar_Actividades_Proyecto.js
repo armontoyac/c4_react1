@@ -14,7 +14,7 @@ const AgregarActividades = function (props) {
               readOnly
               type="text"
               name="id"
-              value="1"
+              value=""
             />
             <br />
 
@@ -23,7 +23,7 @@ const AgregarActividades = function (props) {
               className="form-control"
               type="text"
               name="nombre"
-              value="Proyecto 1"
+              value=""
             />
             <br />
 
@@ -32,7 +32,7 @@ const AgregarActividades = function (props) {
               className="form-control"
               type="text"
               name="descripcion"
-              value="Actividad 1"
+              value=""
             />
             <br />
 
@@ -41,7 +41,7 @@ const AgregarActividades = function (props) {
               className="form-control"
               type="text"
               name="horas_planeado"
-              value="10"
+              value=""
             />
             <br />
 
@@ -50,7 +50,7 @@ const AgregarActividades = function (props) {
               className="form-control"
               type="text"
               name="estado"
-              value="Iniciada"
+              value=""
             />
             <br />
 
@@ -59,12 +59,12 @@ const AgregarActividades = function (props) {
               className="form-control"
               type="text"
               name="fecha_inicio"
-              value="2021-11-25"
+              value=""
             />
             <br />
           </div>
           <button className="btn btn-primary">Agregar Actividad</button>
-          <button className="btn btn-danger">Cancelar</button>
+          <button className="btn btn-outline-primary">Cancelar</button>
             </div>
         </Fragment>
     );

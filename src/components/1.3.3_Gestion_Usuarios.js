@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import React, {useState} from 'react';
-import dataUsuarios from './Data/dataUsuarios';
+import dataUsuarios from '../Data/dataUsuarios';
 
 
 const GestionUsuarios = function (props) {
@@ -41,7 +41,7 @@ const GestionUsuarios = function (props) {
               <td>{elemento.nombres}</td>
               <td>{elemento.rol}</td>
               <td><button className="btn btn-primary" >Editar</button> {"   "} 
-              <button className="btn btn-danger" >Eliminar</button>{"   "} 
+              <button className="btn btn-outline-primary" >Eliminar</button>{"   "} 
               </td>
             </tr>
           ))

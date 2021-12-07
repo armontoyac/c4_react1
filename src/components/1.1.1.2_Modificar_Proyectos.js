@@ -73,7 +73,7 @@ const Modificarproyecto = function (props) {
         </div>
 
         <button className="btn btn-primary">Modificar Proyecto</button>
-        <button className="btn btn-danger">Cancelar</button>
+        <button className="btn btn-outline-primary">Cancelar</button>
           
         </div>
    

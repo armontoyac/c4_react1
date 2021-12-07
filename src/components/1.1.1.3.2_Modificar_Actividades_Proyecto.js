@@ -64,7 +64,7 @@ const ModificarActividades = function (props) {
             <br />
           </div>
           <button className="btn btn-primary">Modificar Actividad</button>
-          <button className="btn btn-danger">Cancelar</button>
+          <button className="btn btn-outline-primary">Cancelar</button>
             </div>
         </Fragment>
     );

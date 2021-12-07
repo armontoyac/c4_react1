@@ -9,7 +9,7 @@ import Proyectlist from './components/Proyectlist';
 import ProyectText from './components/ProyectText';
 import Footer from './components/Footer';
 import './App.css';
-import AgregarActividades from './components/Actividades';
+import AgregarActividades from './components/1.1.1.3.1_Agregar_Actividades_Proyecto';
 import Agregarproyecto from './components/1.1.1.1_Agregar_Proyectos';
 import Modificarproyecto from './components/1.1.1.2_Modificar_Proyectos';
 import Modificardatos from './components/1.1.3_Modificar_Datos';
