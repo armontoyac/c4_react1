@@ -26,7 +26,7 @@ const UsuarioAdministrador = function (props) {
                     </div>
                     <div className="col">
                         <div className="card">
-                            <img src={editarperfil} className="card-img-top" height="300rem" alt="..."/>
+                            <img src={editarperfil} className="card-img-top" height="350rem" alt="..."/>
                             <div className="card-body">
                                 <button type="button" class="btn btn-outline-primary">Gestión de usuarios</button>
                                 <p className="card-text">Agrega nuevos usuarios y administra usuarios existentes</p>

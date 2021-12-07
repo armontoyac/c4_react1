@@ -28,6 +28,7 @@ import EstadoActividad from './components/1.2.4_Cargar_Estado';
 import menu_informe from './components/1.1.2_Menu_Informes';
 import UsuarioSubalterno from './components/1.2_Opciones_Usuario_Subalterno';
 import UsuarioAdministrador from './components/1.3_Opciones_Usuario_Administrador';
+import CrudActividades from './components/1.1.1.3_CRUD_Actividades';
 
 
 function App() {
@@ -110,6 +111,7 @@ function App() {
           </Container>
           {/* <ProyectText /> */}
           <UsuarioAdministrador/>
+          <CrudActividades/>
           <Footer />
         
      
