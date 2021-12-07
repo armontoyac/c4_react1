@@ -4,14 +4,67 @@ const ModificarActividades = function (props) {
     return (
         <Fragment>
             <div className="card">
-                <div class="card-header bg-warning text-white">
-                    <h1>Modificar Actividades</h1>
-                </div>            
-                <div className="card-body">
-                    <p>
-                    ALEX
-                    </p>
-                </div>
+            <div>
+            <h3>Modificar Actividad</h3>
+          </div>
+          <div className="form-group">
+            <label>ID</label>
+            <input
+              className="form-control"
+              readOnly
+              type="text"
+              name="id"
+              value="1"
+            />
+            <br />
+
+            <label>Proyecto</label>
+            <input
+              className="form-control"
+              type="text"
+              name="nombre"
+              value="Proyecto 1"
+            />
+            <br />
+
+            <label>Descripción</label>
+            <input
+              className="form-control"
+              type="text"
+              name="descripcion"
+              value="Actividad 1"
+            />
+            <br />
+
+            <label>Duración estimada en horas</label>
+            <input
+              className="form-control"
+              type="text"
+              name="horas_planeado"
+              value="10"
+            />
+            <br />
+
+            <label>Estado</label>
+            <input
+              className="form-control"
+              type="text"
+              name="estado"
+              value="Iniciada"
+            />
+            <br />
+
+            <label>Fecha Inicial</label>
+            <input
+              className="form-control"
+              type="text"
+              name="fecha_inicio"
+              value="2021-11-25"
+            />
+            <br />
+          </div>
+          <button className="btn btn-primary">Modificar Actividad</button>
+          <button className="btn btn-danger">Cancelar</button>
             </div>
         </Fragment>
     );
