@@ -78,7 +78,7 @@ const NavBar = function ({ onOptionClicked }) {
                             </Navbar.Collapse>
                         </Container>
                     </ul>
-                    <Nav.Link className = "text-white" href="#Anterior">Anterior</Nav.Link>
+                    
                                   <Nav.Link className = "text-white" href="#Inicio">Inicio</Nav.Link>
                     <form className="d-flex">
                         <button className="btn btn-outline-light" type="submit">Login</button>
