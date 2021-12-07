@@ -63,7 +63,7 @@ const AgregarActividades = function (props) {
             />
             <br />
           </div>
-          <button className="btn btn-primary">Modificar Actividad</button>
+          <button className="btn btn-primary">Agregar Actividad</button>
           <button className="btn btn-danger">Cancelar</button>
             </div>
         </Fragment>
