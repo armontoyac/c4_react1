@@ -21,7 +21,7 @@ const HorasProyecto = function (props) {
         <Fragment>
              <div class="card text-center">
                 <div class="card-body">
-                    <h5 class="card-title">Informe Horas por Proyecto</h5>
+                    <h2 class="card-title">Informe Horas por Proyecto</h2>
                     <p class="card-text">Número de horas esperadas para cada proyecto y el número de horas ejecutadas.</p>
                 </div>
             </div>

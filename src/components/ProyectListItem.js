@@ -5,16 +5,16 @@ function ProyectListItem({...props}) {
 
     switch(props.layout) {
         case 'ProyIniciados':
-            datos = 'Fecha de Inicio: ' + props.fechaInicio;
+            datos = 'Fecha de Inicio: ' + props.fecha_inicio;
             break;
         case "ProyTerminados":
-            datos = "Fecha de Finalización: " + props.fechaFinal;
+            datos = "Fecha de Finalización: " + props.fecha_finalizacion;
             break;
         case "HorasProyectos":
-            datos = "Horas Definidas: " + props.horasDefinidas + " Horas Reportadas: " + props.horasReportadas;
+            datos = "Horas Definidas: " + props.horasDefinidas + "    Horas Reportadas: " + props.horasReportadas;
             break;
         case "HorasEmpleado":
-            datos = "Empleado: " + props.empleado + " Horas Reportadas: " + props.horasReportadas;
+            datos = "Empleado: " + props.empleado + "    Horas Reportadas: " + props.horasReportadas;
             break;
     }
 

@@ -1,6 +1,6 @@
 //import lorem from './img/lorem-ipsum.png';
 import NavBar from './components/NavBar';
-import { useState } from 'react';
+import { useState, Component} from 'react';
 import { Container } from 'react-bootstrap';
 
 import './bootstrap.css';
@@ -29,6 +29,9 @@ import menu_informe from './components/1.1.2_Menu_Informes';
 import UsuarioSubalterno from './components/1.2_Opciones_Usuario_Subalterno';
 import UsuarioAdministrador from './components/1.3_Opciones_Usuario_Administrador';
 import CrudActividades from './components/1.1.1.3_CRUD_Actividades';
+import dataUsuarios from "./Data/dataUsuarios";
+import dataProyectos from "./Data/dataProyectos";
+import dataActividades from "./Data/dataActividades";
 
 
 function App() {
@@ -46,52 +49,86 @@ function App() {
     
   ];
 
-
+  const [ showAdmin, setshowAdmin ] = useState(true);
+  const [ showContainer, setshowContainer ] = useState(false);
 
   const [compDinamico, setCompDinamico] = useState(<crud_proyecto />);
 
   const onOptionClicked = function (evt) {
+
+    evt.preventDefault();
+
     evt.preventDefault();
     if (evt.target.name === "AgregarP") {
       setCompDinamico(< Agregarproyecto />);
+      setshowAdmin(false)
+      setshowContainer(true)
     } else {
-      if (evt.target.name === "ModificarP") { setCompDinamico(<Modificarproyecto />); }
+      if (evt.target.name === "ModificarP") { setCompDinamico(<Modificarproyecto />);
+      setshowAdmin(false) 
+      setshowContainer(true) }
       else {
-        if (evt.target.name === "AgregarPro") { setCompDinamico(<AgregarActividades />); }
+        if (evt.target.name === "AgregarPro") { setCompDinamico(<AgregarActividades />); 
+          setshowAdmin(false)
+          setshowContainer(true) }
         else {
-          if (evt.target.name === "ModificarPro") { setCompDinamico(<ModificarActividades />); }
+          if (evt.target.name === "ModificarPro") { setCompDinamico(<ModificarActividades />); 
+            setshowAdmin(false)
+            setshowContainer(true) }
         else {
-          if (evt.target.name === "Terminados") { setCompDinamico(<ProyectosTerminados />); }
+          if (evt.target.name === "Terminados") { setCompDinamico(<ProyectosTerminados proyectos={dataProyectos} />); 
+          setshowAdmin(false)
+          setshowContainer(true) }
           else {
-            if (evt.target.name === "Iniciados") { setCompDinamico(<ProyectosIniciados />); }
+            if (evt.target.name === "Iniciados") { setCompDinamico(<ProyectosIniciados proyectos={dataProyectos} />); 
+            setshowAdmin(false)
+            setshowContainer(true) }
             else {
-              if (evt.target.name === "HorasP") { setCompDinamico(<HorasProyecto />); }
+              if (evt.target.name === "HorasP") { setCompDinamico(<HorasProyecto />); 
+                setshowAdmin(false)
+                setshowContainer(true) }
               else {
-                if (evt.target.name === "HorasE") { setCompDinamico(<HorasEmpleado/>); }
+                if (evt.target.name === "HorasE") { setCompDinamico(<HorasEmpleado/>); 
+                  setshowAdmin(false)
+                  setshowContainer(true)}
                 else {
-                  if (evt.target.name === "CrudUsuarios") { setCompDinamico(<GestionUsuarios/>); }
+                  if (evt.target.name === "CrudUsuarios") { setCompDinamico(<GestionUsuarios/>); 
+                    setshowAdmin(false)
+                  setshowContainer(true) }
                 else {
-                  if (evt.target.name === "AgregarU") { setCompDinamico(<AgregarUsuarios/>); }
+                  if (evt.target.name === "AgregarU") { setCompDinamico(<AgregarUsuarios/>); 
+                    setshowAdmin(false)
+                  setshowContainer(true) }
                 else {
-                  if (evt.target.name === "ModificarU") { setCompDinamico(<ModificarUsuarios/>); }
+                  if (evt.target.name === "ModificarU") { setCompDinamico(<ModificarUsuarios/>); 
+                    setshowAdmin(false)
+                  setshowContainer(true) }
                 else {
-                  if (evt.target.name === "Asignados") { setCompDinamico(<ProyectosSubalterno proyectos={lista_datos}/>); }
+                  if (evt.target.name === "Asignados") { setCompDinamico(<ProyectosSubalterno proyectos={lista_datos}/>); 
+                  setshowAdmin(false)
+                setshowContainer(true)}
                   else {
-                    if (evt.target.name === "AAsignadas") { setCompDinamico(<ActividadesSubalterno Actividades={lista_actividades} />); }
+                    if (evt.target.name === "AAsignadas") { setCompDinamico(<ActividadesSubalterno Actividades={lista_actividades} />); 
+                    setshowAdmin(false)
+                  setshowContainer(true) }
                     else {
-                      if (evt.target.name === "CHoras") { setCompDinamico(<HorasActividad/>); }
+                      if (evt.target.name === "CHoras") { setCompDinamico(<HorasActividad/>); 
+                        setshowAdmin(false)
+                      setshowContainer(true) }
                       else {
-                        if (evt.target.name === "CEstado") { setCompDinamico(<EstadoActividad/>); }
+                        if (evt.target.name === "CEstado") { setCompDinamico(<EstadoActividad/>); 
+                          setshowAdmin(false)
+                        setshowContainer(true)}
                         else {
-                          if (evt.target.name === "MDatos") {setCompDinamico(<Modificardatos />);}
-                          else {
-                            setCompDinamico (<menu_informe />);
-                          }
+                          if (evt.target.name === "MDatos") {setCompDinamico(<Modificardatos />); 
+                            setshowAdmin(false)
+                          setshowContainer(true)}
         }
       }
     }
   }
-  }}}}}}}}}}}}
+  }}}}}}}}}}}
+}
 
 
 
@@ -100,17 +137,21 @@ function App() {
     <div>
 
       
-        <NavBar onOptionClicked={onOptionClicked} />
+        <NavBar onOptionClicked={onOptionClicked}
+        />
         
-          <Container>
+          {showContainer && <Container style={{minHeight: "68.3vh"}}>
           <div className="card mt-5">
             <div className="card-body">
               {compDinamico}
             </div>
           </div>
-          </Container>
+          </Container> }
           {/* <ProyectText /> */}
-          <UsuarioAdministrador/>
+          
+          {showAdmin && <div style={{minHeight: "73.2vh", display: 'flex', alignItems: 'center', justifyContent: 'center'}} >
+            <UsuarioAdministrador/>
+            </div>}
           {/*<CrudActividades/> */}
           <Footer />
         

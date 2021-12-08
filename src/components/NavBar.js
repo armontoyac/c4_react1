@@ -19,8 +19,8 @@ const NavBar = function ({ onOptionClicked }) {
                 </button>
                 <a className="navbar-brand" href="none">AppProject</a>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-self-center">
+                        <li className="nav-item align-self-center">
                             <a className="nav-link active" aria-current="page" href="none">Home</a>
                         </li>
                       
@@ -29,51 +29,51 @@ const NavBar = function ({ onOptionClicked }) {
                                 <Nav className="me-auto">
                                 </Nav>
                                 <Nav>
-                                <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div className="container-fluid">
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+                                    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+                                        <div className="container-fluid">
+                                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span className="navbar-toggler-icon"></span>
+                                            </button>
 
-                                        <NavDropdown className="bg-primary" title="Proyectos" align="end" id="basic-nav-dropdown"  >
-                                            <NavDropdown.Item href="#AgregarProyectos" name="AgregarP" onClick={onOptionClicked}>Agregar </NavDropdown.Item>
-                                            <NavDropdown.Item href="#ModificarProyectos" name="ModificarP" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
-                                        </NavDropdown>
-                                                                          
-                                
-                                        <NavDropdown className="bg-primary" title="Actividades" align="end" id="basic-nav-dropdown"  >
-                                            <NavDropdown.Item href="#AgregarProyectos" name="AgregarPro" onClick={onOptionClicked}>Agregar</NavDropdown.Item>
-                                            <NavDropdown.Item href="#ModificarProyectos" name="ModificarPro" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
-                                        </NavDropdown>
+                                            <NavDropdown title="Proyectos" align="end" id="basic-nav-dropdown"  >
+                                                <NavDropdown.Item href="#AgregarProyectos" name="AgregarP" onClick={onOptionClicked}>Agregar </NavDropdown.Item>
+                                                <NavDropdown.Item href="#ModificarProyectos" name="ModificarP" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
+                                            </NavDropdown>
+                                                                            
+                                    
+                                            <NavDropdown title="Actividades" align="end" id="basic-nav-dropdown"  >
+                                                <NavDropdown.Item href="#AgregarProyectos" name="AgregarPro" onClick={onOptionClicked}>Agregar</NavDropdown.Item>
+                                                <NavDropdown.Item href="#ModificarProyectos" name="ModificarPro" onClick={onOptionClicked}>Modificar</NavDropdown.Item>
+                                            </NavDropdown>
 
-                                        <NavDropdown className="bg-primary" title="Informes" align="end" id="basic-nav-dropdown"  >
-                                            <NavDropdown.Item href="#ProyectosTerminados" name="Terminados" onClick={onOptionClicked}>Proyectos Terminados</NavDropdown.Item>
-                                            <NavDropdown.Item href="#ProyectosIniciados" name="Iniciados" onClick={onOptionClicked}>Proyectos Iniciados</NavDropdown.Item>
-                                            <NavDropdown.Item href="#HorasProyecto" name="HorasP" onClick={onOptionClicked}>Horas Por Proyecto</NavDropdown.Item>
-                                            <NavDropdown.Item href="#HorasEmpleado" name="HorasE" onClick={onOptionClicked}>Horas Por Empleado y Proyecto</NavDropdown.Item>
-                                        </NavDropdown>
+                                            <NavDropdown title="Informes" align="end" id="basic-nav-dropdown"  >
+                                                <NavDropdown.Item href="#ProyectosTerminados" name="Terminados" onClick={onOptionClicked}>Proyectos Terminados</NavDropdown.Item>
+                                                <NavDropdown.Item href="#ProyectosIniciados" name="Iniciados" onClick={onOptionClicked}>Proyectos Iniciados</NavDropdown.Item>
+                                                <NavDropdown.Item href="#HorasProyecto" name="HorasP" onClick={onOptionClicked}>Horas Por Proyecto</NavDropdown.Item>
+                                                <NavDropdown.Item href="#HorasEmpleado" name="HorasE" onClick={onOptionClicked}>Horas Por Empleado y Proyecto</NavDropdown.Item>
+                                            </NavDropdown>
 
-                                        <NavDropdown.Divider />
+                                            <NavDropdown.Divider />
 
-                                        <NavDropdown className="bg-primary" title="Usuario Administrador" align="end" id="basic-nav-dropdown"  >
-                                            <NavDropdown.Item href="#CrudUsuarios" name="CrudUsuarios" onClick={onOptionClicked}>Crud Usuarios</NavDropdown.Item>
-                                            <NavDropdown.Item href="#AgregarUsuarios" name="AgregarU" onClick={onOptionClicked}>Agregar Usuarios</NavDropdown.Item>
-                                            <NavDropdown.Item href="#ModificarUsuarios" name="ModificarU" onClick={onOptionClicked}>Modificar Usuarios</NavDropdown.Item>
+                                            <NavDropdown title="Usuario Administrador" align="end" id="basic-nav-dropdown"  >
+                                                <NavDropdown.Item href="#CrudUsuarios" name="CrudUsuarios" onClick={onOptionClicked}>Crud Usuarios</NavDropdown.Item>
+                                                <NavDropdown.Item href="#AgregarUsuarios" name="AgregarU" onClick={onOptionClicked}>Agregar Usuarios</NavDropdown.Item>
+                                                <NavDropdown.Item href="#ModificarUsuarios" name="ModificarU" onClick={onOptionClicked}>Modificar Usuarios</NavDropdown.Item>
 
-                                        </NavDropdown>
+                                            </NavDropdown>
 
-                                        <NavDropdown className="bg-primary" title="Usuario Subalterno" align="end" id="basic-nav-dropdown"  >
-                                            <NavDropdown.Item href="#ProyectosAsignados" name="Asignados" onClick={onOptionClicked}>Proyectos Asigandos</NavDropdown.Item>
-                                            <NavDropdown.Item href="#ActividadesAsignadas" name="AAsignadas" onClick={onOptionClicked}>Actividades de un Proyecto Asignadas</NavDropdown.Item>
-                                            <NavDropdown.Item href="#CargarHoras" name="CHoras" onClick={onOptionClicked}>Cargar Horas Actividad</NavDropdown.Item>
-                                            <NavDropdown.Item href="#CargarEstado" name="CEstado" onClick={onOptionClicked}>Cargar Estado Actividad</NavDropdown.Item>
-                                        </NavDropdown>
+                                            <NavDropdown title="Usuario Subalterno" align="end" id="basic-nav-dropdown"  >
+                                                <NavDropdown.Item href="#ProyectosAsignados" name="Asignados" onClick={onOptionClicked}>Proyectos Asigandos</NavDropdown.Item>
+                                                <NavDropdown.Item href="#ActividadesAsignadas" name="AAsignadas" onClick={onOptionClicked}>Actividades de un Proyecto Asignadas</NavDropdown.Item>
+                                                <NavDropdown.Item href="#CargarHoras" name="CHoras" onClick={onOptionClicked}>Cargar Horas Actividad</NavDropdown.Item>
+                                                <NavDropdown.Item href="#CargarEstado" name="CEstado" onClick={onOptionClicked}>Cargar Estado Actividad</NavDropdown.Item>
+                                            </NavDropdown>
 
-                                        <NavDropdown.Divider />
+                                            <NavDropdown.Divider />
 
-                                        <NavDropdown.Item className="bg-primary text-white" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
+                                            <NavDropdown.Item className=" text-white" href="#ModificarDatos" name="MDatos" onClick={onOptionClicked}>Modificar Datos</NavDropdown.Item>
                                         </div>
-                                        </nav>
+                                    </nav>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
