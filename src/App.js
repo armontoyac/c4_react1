@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import { useState, Component} from 'react';
 import { Container } from 'react-bootstrap';
 
+
 import './bootstrap.css';
 
 import Proyectlist from './components/Proyectlist';
@@ -32,6 +33,7 @@ import CrudActividades from './components/1.1.1.3_CRUD_Actividades';
 import dataUsuarios from "./Data/dataUsuarios";
 import dataProyectos from "./Data/dataProyectos";
 import dataActividades from "./Data/dataActividades";
+import FormLogin from './components/1.login';
 
 
 function App() {
@@ -123,6 +125,11 @@ function App() {
                           if (evt.target.name === "MDatos") {setCompDinamico(<Modificardatos />); 
                             setshowAdmin(false)
                           setshowContainer(true)}
+                          else {
+                            if (evt.target.name === "Login") {setCompDinamico(<FormLogin />); 
+                              setshowAdmin(false)
+                            setshowContainer(true)}
+          }
         }
       }
     }

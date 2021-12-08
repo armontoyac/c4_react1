@@ -1,5 +1,6 @@
 import { Navbar, NavDropdown, Container, Nav, Form, Button } from 'react-bootstrap';
 
+
 const menu = [
     {
         id: "1", item: "Proyectos", subitems:
@@ -81,7 +82,7 @@ const NavBar = function ({ onOptionClicked }) {
                     
                                   <Nav.Link className = "text-white" href="#Inicio">Inicio</Nav.Link>
                     <form className="d-flex">
-                        <button className="btn btn-outline-light" type="submit">Login</button>
+                        <button className="btn btn-outline-light" type="submit" name="Login" onClick={onOptionClicked}>Login</button>
                     </form>
                 </div>
             </div>
