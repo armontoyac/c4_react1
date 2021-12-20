@@ -34,6 +34,7 @@ import dataUsuarios from "./Data/dataUsuarios";
 import dataProyectos from "./Data/dataProyectos";
 import dataActividades from "./Data/dataActividades";
 import FormLogin from './components/1.login';
+import Login from './components/Login/index'
 
 
 function App() {
@@ -126,7 +127,7 @@ function App() {
                             setshowAdmin(false)
                           setshowContainer(true)}
                           else {
-                            if (evt.target.name === "Login") {setCompDinamico(<FormLogin />); 
+                            if (evt.target.name === "Login") {setCompDinamico(<Login />); 
                               setshowAdmin(false)
                             setshowContainer(true)}
           }
